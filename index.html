@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  
-<link rel="stylesheet" href="main.css">
+  <title>Flowers</title>
+<link rel="icon" type="image/png" href="/flor.png">   
+  <link rel="stylesheet" href="main.css">
+</head>
 
 <body>
   <div class="container">
@@ -20,7 +21,7 @@
     Click To Add Flowers
   </div>
 
-<script type="x-shader/x-fragment" id="fragmentShader">
+  <script type="x-shader/x-fragment" id="fragmentShader">
     #define PI 3.14159265359
 
     uniform float u_ratio;
@@ -169,7 +170,7 @@
 
 </script>
 
-<script type="x-shader/x-vertex" id="vertexShader">
+  <script type="x-shader/x-vertex" id="vertexShader">
     varying vec2 vUv;
     void main() {
         vUv = uv;
@@ -181,5 +182,3 @@
 <script type="module" src="main.js"></script>
 
 </html>
-
-
